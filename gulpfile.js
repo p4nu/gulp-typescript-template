@@ -34,7 +34,7 @@ function copyHtml(cb) {
     cb();
 }
 
-function callBundle(cb) {
+function bundlify(cb) {
     bundle();
     cb();
 }
@@ -54,4 +54,4 @@ function bundle() {
 watchedBrowserify.on('update', bundle);
 watchedBrowserify.on('log', fancy_log);
 
-exports.default = series(copyHtml, callBundle);
+exports.default = series(copyHtml, bundlify);
