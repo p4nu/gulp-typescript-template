@@ -3,5 +3,5 @@ TypeScript with gulp template using watchify, babelify, browserify, fancy-log, t
 
 ## How to use
 1. Run `npm install`
-2. Run `gulp`
+2. Run `npm start`
 3. Edit ts files and see gulp tasks to update the files in `dist/`
